@@ -158,8 +158,9 @@
 
     <include layout="@layout/square_list"
         android:id="@+id/square_list"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:visibility="gone"
         />
+
+    <include layout="@layout/circle_list"
+        android:id="@+id/circle_list"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

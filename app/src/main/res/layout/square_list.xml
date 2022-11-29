@@ -12,12 +12,24 @@
         tools:ignore="MissingConstraints"
         android:background="@color/grey_panel"
         app:layout_constraintBottom_toBottomOf="parent">
+
         <androidx.constraintlayout.widget.Group
             android:id="@+id/square_group"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:constraint_referenced_ids="square_side,square_area,square_diagonal,square_group,square_perimeter, square_perimeter,square_the_radius_of_the_circle,square_the_radius_of_the_inscribed_circle"
-            />
+            app:constraint_referenced_ids="square_side,square_area,square_diagonal,square_group,square_perimeter, square_perimeter,square_the_radius_of_the_circle,square_the_radius_of_the_inscribed_circle, button_end"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/button_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_200"
+            android:text="TODO"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/square_side"
+            android:paddingTop="4dp"/>
 
         <ImageView
             android:id="@+id/square_side"

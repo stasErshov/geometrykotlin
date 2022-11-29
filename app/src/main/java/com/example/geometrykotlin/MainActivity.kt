@@ -3,6 +3,7 @@ package com.example.geometrykotlin
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Html
+import android.view.View
 import com.example.geometrykotlin.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -15,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.apply {
             circle.setOnClickListener{
-                //TODO circleActivity
+                circleList.circleGroup.visibility = View.VISIBLE
             }
             circularSector.setOnClickListener{
                 //TODO circularSectorActivity
@@ -48,7 +49,7 @@ class MainActivity : AppCompatActivity() {
                 //TODO ringActivity
             }
             square.setOnClickListener{
-                //TODO squareActivity
+                squareList.squareGroup.visibility = View.VISIBLE
             }
             trapezoid.setOnClickListener{
                 //TODO trapezoidActivity
