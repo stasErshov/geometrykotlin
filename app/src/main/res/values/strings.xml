@@ -1,3 +1,27 @@
 <resources>
-    <string name="app_name">geometryKotlin</string>
+    <string name="app_name">Geometry</string>
+    <string name="circle">circle</string>
+    <string name="circular_sector">circular_sector</string>
+    <string name="circular_segment">circular_segment</string>
+    <string name="ellipse_axis">ellipse_axis</string>
+    <string name="isosceles_triangle">isosceles_triangle</string>
+    <string name="parallelogram">parallelogram</string>
+    <string name="rectangle">rectangle</string>
+    <string name="regular_polygon">regular_polygon</string>
+    <string name="rhombus">rhombus</string>
+    <string name="right_triangle">right_triangle</string>
+    <string name="ring">ring</string>
+    <string name="square">square</string>
+    <string name="trapezoid">trapezoid</string>
+    <string name="triangle">triangle</string>
+    <string name="title_activity_square">SquareActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
 </resources>
