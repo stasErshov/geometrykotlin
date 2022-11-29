@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:background="@color/grey_panel"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/square_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="square_side,square_area,square_diagonal,square_group,square_perimeter, square_perimeter,square_the_radius_of_the_circle,square_the_radius_of_the_inscribed_circle"
+            />
+
+        <ImageView
+            android:id="@+id/square_side"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            android:src="@drawable/square_side"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/square_diagonal"
+            android:paddingTop="8dp"/>
+
+        <ImageView
+            android:id="@+id/square_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            android:src="@drawable/square_area"
+            app:layout_constraintBottom_toTopOf="@id/square_perimeter"
+            app:layout_constraintRight_toRightOf="parent"
+            android:paddingTop="8dp"/>
+
+        <ImageView
+            android:id="@+id/square_diagonal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            android:src="@drawable/square_diagonal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/square_the_radius_of_the_inscribed_circle" />
+
+        <ImageView
+            android:id="@+id/square_perimeter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            android:src="@drawable/square_perimeter"
+            app:layout_constraintBottom_toTopOf="@id/square_the_radius_of_the_circle"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <ImageView
+            android:id="@+id/square_the_radius_of_the_inscribed_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            android:src="@drawable/square_the_radius_of_the_inscribed_circle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <ImageView
+            android:id="@+id/square_the_radius_of_the_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            android:src="@drawable/square_the_radius_of_the_circle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
