@@ -17,6 +17,9 @@ class MainActivity : AppCompatActivity() {
         binding.apply {
             circle.setOnClickListener{
                 circleList.circleGroup.visibility = View.VISIBLE
+                circleList.buttonEnd.setOnClickListener{
+                    circleList.circleGroup.visibility = View.GONE
+                }
             }
             circularSector.setOnClickListener{
                 //TODO circularSectorActivity
@@ -50,6 +53,9 @@ class MainActivity : AppCompatActivity() {
             }
             square.setOnClickListener{
                 squareList.squareGroup.visibility = View.VISIBLE
+                squareList.buttonEnd.setOnClickListener{
+                    squareList.squareGroup.visibility = View.GONE
+                }
             }
             trapezoid.setOnClickListener{
                 //TODO trapezoidActivity
