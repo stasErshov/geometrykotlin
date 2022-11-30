@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:constraint_referenced_ids="button_end,area_triangle,triangle_equilateral_triangle_side,triangle_isosceles_triangle_sides"
-            android:visibility="visible"/>
+            android:visibility="gone"/>
 
         <Button
             android:id="@+id/button_end"
@@ -53,6 +53,60 @@
             android:src="@drawable/triangle_isosceles_triangle_sides"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/triangle_isosceles_triangle_sides_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="button_end_second,triangle_isosceles_triangle_sides_a_and_angle_a,triangle_isosceles_triangle_sides_second, triangle_isosceles_triangle_height_and_angle_a,triangle_isosceles_triangle_height_and_sides_a"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/button_end_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_200"
+            android:text="@string/return_button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/triangle_isosceles_triangle_height_and_angle_a"
+            android:paddingTop="4dp"/>
+
+        <ImageView
+            android:id="@+id/triangle_isosceles_triangle_sides_a_and_angle_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/triangle_isosceles_triangle_sides_a_and_angle_a"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <ImageView
+            android:id="@+id/triangle_isosceles_triangle_sides_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/triangle_isosceles_triangle_sides"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <ImageView
+            android:id="@+id/triangle_isosceles_triangle_height_and_sides_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/triangle_isosceles_triangle_height_and_sides_a"
+            app:layout_constraintBottom_toTopOf="@id/triangle_isosceles_triangle_sides_a_and_angle_a"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <ImageView
+            android:id="@+id/triangle_isosceles_triangle_height_and_angle_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/triangle_isosceles_triangle_height_and_angle_a"
+            app:layout_constraintBottom_toTopOf="@id/triangle_isosceles_triangle_sides_second"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
