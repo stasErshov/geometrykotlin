@@ -170,4 +170,7 @@
 
     <include layout="@layout/ellipse_list"
         android:id="@+id/ellipse_list"/>
+
+    <include layout="@layout/isosceles_triangle_list"
+        android:id="@+id/isosceles_triangle_list"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
