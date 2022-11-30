@@ -13,7 +13,7 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <androidx.constraintlayout.widget.Group
-            android:id="@+id/circle_group"
+            android:id="@+id/parallelogram_group"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:constraint_referenced_ids="button_end,parallelogram_diagonal_and_angle_y,parallelogram_diagonal_and_side_a,parallelogram_heights_and_angle_a,parallelogram_side_and_height,parallelogram_sides_and_angle_a,parallelogram_sides_and_height"
@@ -75,6 +75,142 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/parallelogram_sides_and_height"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/parallelogram_sides_and_angle_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="button_end_second,parallelogram_sides_and_angle_aA,parallelogram_sides_and_angle_b"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/button_end_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_200"
+            android:text="@string/return_button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/parallelogram_sides_and_angle_aA"
+            android:paddingTop="4dp"/>
+
+        <ImageView
+            android:id="@+id/parallelogram_sides_and_angle_aA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/parallelogram_sides_and_angle_a"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <ImageView
+            android:id="@+id/parallelogram_sides_and_angle_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/parallelogram_sides_and_angle_b"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/parallelogram_diagonal_and_angle_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="button_end_thread,parallelogram_diagonal_and_angle_d,parallelogram_diagonal_and_angle_yY"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/button_end_thread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_200"
+            android:text="@string/return_button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/parallelogram_diagonal_and_angle_d"
+            android:paddingTop="4dp"/>
+
+        <ImageView
+            android:id="@+id/parallelogram_diagonal_and_angle_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/parallelogram_diagonal_and_angle_d"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <ImageView
+            android:id="@+id/parallelogram_diagonal_and_angle_yY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/parallelogram_diagonal_and_angle_y"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/parallelogram_diagonal_and_side_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="button_end_fourth,parallelogram_diagonal_and_side_aA,parallelogram_diagonal_and_side_b"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/button_end_fourth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_200"
+            android:text="@string/return_button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/parallelogram_diagonal_and_side_aA"
+            android:paddingTop="4dp"/>
+
+        <ImageView
+            android:id="@+id/parallelogram_diagonal_and_side_aA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/parallelogram_diagonal_and_side_a"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <ImageView
+            android:id="@+id/parallelogram_diagonal_and_side_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/parallelogram_diagonal_and_side_b"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/parallelogram_heights_and_angle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="button_end_fifth,parallelogram_heights_and_angle_aA,parallelogram_heights_and_angle_b"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/button_end_fifth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_200"
+            android:text="@string/return_button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/parallelogram_heights_and_angle_aA"
+            android:paddingTop="4dp"/>
+
+        <ImageView
+            android:id="@+id/parallelogram_heights_and_angle_aA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/parallelogram_heights_and_angle_a"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <ImageView
+            android:id="@+id/parallelogram_heights_and_angle_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/parallelogram_heights_and_angle_b"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent"/>
 

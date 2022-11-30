@@ -83,7 +83,39 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             parallelogram.setOnClickListener{
-                //TODO parallelogramActivity
+                allInvis(binding)
+                parallelogramList.parallelogramGroup.visibility = View.VISIBLE
+                parallelogramList.parallelogramSidesAndAngleA.setOnClickListener{
+                    allInvis(binding)
+                    parallelogramList.parallelogramSidesAndAngleGroup.visibility = View.VISIBLE
+                }
+                parallelogramList.parallelogramDiagonalAndAngleY.setOnClickListener {
+                    allInvis(binding)
+                    parallelogramList.parallelogramDiagonalAndAngleGroup.visibility = View.VISIBLE
+                }
+                parallelogramList.parallelogramDiagonalAndSideA.setOnClickListener {
+                    allInvis(binding)
+                    parallelogramList.parallelogramDiagonalAndSideGroup.visibility = View.VISIBLE
+                }
+                parallelogramList.parallelogramHeightsAndAngleA.setOnClickListener {
+                    allInvis(binding)
+                    parallelogramList.parallelogramHeightsAndAngle.visibility = View.VISIBLE
+                }
+                parallelogramList.buttonEnd.setOnClickListener {
+                    allInvis(binding)
+                }
+                parallelogramList.buttonEndFifth.setOnClickListener {
+                    allInvis(binding)
+                }
+                parallelogramList.buttonEndSecond.setOnClickListener {
+                    allInvis(binding)
+                }
+                parallelogramList.buttonEndFourth.setOnClickListener {
+                    allInvis(binding)
+                }
+                parallelogramList.buttonEndThread.setOnClickListener {
+                    allInvis(binding)
+                }
             }
             rectangle.setOnClickListener{
                 //TODO rectangleActivity
@@ -128,6 +160,11 @@ class MainActivity : AppCompatActivity() {
             isoscelesTriangleList.triangleIsoscelesTriangleHeightAndSidesGroup.visibility = View.GONE
             isoscelesTriangleList.triangleIsoscelesTriangleSidesGroup.visibility = View.GONE
             isoscelesTriangleList.triangleIsoscelesTriangleSidesSecondGroup.visibility = View.GONE
+            parallelogramList.parallelogramGroup.visibility = View.GONE
+            parallelogramList.parallelogramSidesAndAngleGroup.visibility = View.GONE
+            parallelogramList.parallelogramDiagonalAndAngleGroup.visibility = View.GONE
+            parallelogramList.parallelogramDiagonalAndSideGroup.visibility = View.GONE
+            parallelogramList.parallelogramHeightsAndAngle.visibility = View.GONE
         }
     }
 }
