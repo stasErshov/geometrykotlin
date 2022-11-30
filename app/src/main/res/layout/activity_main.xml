@@ -157,10 +157,17 @@
     </ScrollView>
 
     <include layout="@layout/square_list"
-        android:id="@+id/square_list"
-        />
+        android:id="@+id/square_list"/>
 
     <include layout="@layout/circle_list"
         android:id="@+id/circle_list"/>
 
+    <include layout="@layout/circular_sector_list"
+        android:id="@+id/circular_sector_list"/>
+
+    <include layout="@layout/circular_segment_list"
+        android:id="@+id/circular_segment_list"/>
+
+    <include layout="@layout/ellipse_list"
+        android:id="@+id/ellipse_list"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,10 +13,10 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <androidx.constraintlayout.widget.Group
-            android:id="@+id/circle_group"
+            android:id="@+id/circular_segment_group"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:constraint_referenced_ids="circle_area,circle_circuit,circle_diameter,circle_radius,button_end"
+            app:constraint_referenced_ids="button_end,circular_segment_chord_length_height,circular_segment_radius_and_angle,circular_segment_radius_and_height"
             android:visibility="gone"/>
 
         <Button
@@ -27,40 +27,32 @@
             android:text="@string/return_button"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/circle_area"
+            app:layout_constraintBottom_toTopOf="@id/circular_segment_chord_length_height"
             android:paddingTop="4dp"/>
 
         <ImageView
-            android:id="@+id/circle_area"
+            android:id="@+id/circular_segment_chord_length_height"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/circle_area"
-            app:layout_constraintBottom_toTopOf="@id/circle_diameter"
+            android:src="@drawable/circular_segment_chord_length_height"
+            app:layout_constraintBottom_toTopOf="@id/circular_segment_radius_and_height"
             app:layout_constraintLeft_toLeftOf="parent"/>
 
         <ImageView
-            android:id="@+id/circle_circuit"
+            android:id="@+id/circular_segment_radius_and_angle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/circle_circuit"
-            app:layout_constraintBottom_toTopOf="@id/circle_radius"
+            android:src="@drawable/circular_segment_radius_and_angle"
+            app:layout_constraintTop_toTopOf="@id/circular_segment_chord_length_height"
             app:layout_constraintRight_toRightOf="parent"/>
 
         <ImageView
-            android:id="@+id/circle_diameter"
+            android:id="@+id/circular_segment_radius_and_height"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/circle_diameter"
+            android:src="@drawable/circular_segment_radius_and_height"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"/>
-
-        <ImageView
-            android:id="@+id/circle_radius"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/circle_radius"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintRight_toRightOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

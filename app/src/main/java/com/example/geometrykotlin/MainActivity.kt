@@ -22,13 +22,22 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             circularSector.setOnClickListener{
-                //TODO circularSectorActivity
+                circularSectorList.circleSectorGroup.visibility = View.VISIBLE
+                circularSectorList.buttonEnd.setOnClickListener {
+                    circularSectorList.circleSectorGroup.visibility = View.GONE
+                }
             }
             circularSegment.setOnClickListener{
-                //TODO circularSegmentActivity
+                circularSegmentList.circularSegmentGroup.visibility = View.VISIBLE
+                circularSegmentList.buttonEnd.setOnClickListener {
+                    circularSegmentList.circularSegmentGroup.visibility = View.GONE
+                }
             }
             ellipseAxis.setOnClickListener{
-                //TODO ellipseAxisActivity
+                ellipseList.ellipseGroup.visibility = View.VISIBLE
+                ellipseList.buttonEnd.setOnClickListener {
+                    ellipseList.ellipseGroup.visibility = View.GONE
+                }
             }
             isoscelesTriangle.setOnClickListener{
                 //TODO isoscelesTriangleActivity
