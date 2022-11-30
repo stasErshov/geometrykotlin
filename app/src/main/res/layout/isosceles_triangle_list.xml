@@ -162,5 +162,39 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintBottom_toTopOf="@id/triangle_equilateral_triangle_height"/>
 
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/triangle_isosceles_triangle_height_and_sides_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="button_triangle_isosceles_triangle_height_and_sides,triangle_isosceles_triangle_height_and_sides_aA, triangle_isosceles_triangle_height_and_sides_b"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/button_triangle_isosceles_triangle_height_and_sides"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_200"
+            android:text="@string/return_button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/triangle_isosceles_triangle_height_and_sides_aA"
+            android:paddingTop="4dp"/>
+
+        <ImageView
+            android:id="@+id/triangle_isosceles_triangle_height_and_sides_aA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/triangle_isosceles_triangle_height_and_sides_a"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <ImageView
+            android:id="@+id/triangle_isosceles_triangle_height_and_sides_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/triangle_isosceles_triangle_height_and_sides_b"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
