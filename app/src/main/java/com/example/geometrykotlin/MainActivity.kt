@@ -16,31 +16,71 @@ class MainActivity : AppCompatActivity() {
 
         binding.apply {
             circle.setOnClickListener{
+                allInvis(binding)
                 circleList.circleGroup.visibility = View.VISIBLE
                 circleList.buttonEnd.setOnClickListener{
-                    circleList.circleGroup.visibility = View.GONE
+                    allInvis(binding)
                 }
             }
             circularSector.setOnClickListener{
+                allInvis(binding)
                 circularSectorList.circleSectorGroup.visibility = View.VISIBLE
                 circularSectorList.buttonEnd.setOnClickListener {
-                    circularSectorList.circleSectorGroup.visibility = View.GONE
+                    allInvis(binding)
                 }
             }
             circularSegment.setOnClickListener{
+                allInvis(binding)
                 circularSegmentList.circularSegmentGroup.visibility = View.VISIBLE
                 circularSegmentList.buttonEnd.setOnClickListener {
-                    circularSegmentList.circularSegmentGroup.visibility = View.GONE
+                    allInvis(binding)
                 }
             }
             ellipseAxis.setOnClickListener{
+                allInvis(binding)
                 ellipseList.ellipseGroup.visibility = View.VISIBLE
                 ellipseList.buttonEnd.setOnClickListener {
-                    ellipseList.ellipseGroup.visibility = View.GONE
+                    allInvis(binding)
                 }
             }
             isoscelesTriangle.setOnClickListener{
-                //TODO isoscelesTriangleActivity
+                allInvis(binding)
+                isoscelesTriangleList.isoscelesTriangleGroup.visibility = View.VISIBLE
+                isoscelesTriangleList.buttonEnd.setOnClickListener {
+                    allInvis(binding)
+                }
+                isoscelesTriangleList.triangleIsoscelesTriangleSides.setOnClickListener {
+                    allInvis(binding)
+                    isoscelesTriangleList.triangleIsoscelesTriangleSidesGroup.visibility = View.VISIBLE
+                }
+                isoscelesTriangleList.buttonEndSecond.setOnClickListener {
+                    allInvis(binding)
+                    isoscelesTriangleList.isoscelesTriangleGroup.visibility = View.VISIBLE
+                }
+                isoscelesTriangleList.triangleEquilateralTriangleSide.setOnClickListener {
+                    allInvis(binding)
+                    isoscelesTriangleList.triangleEquilateralTriangleSideGroup.visibility = View.VISIBLE
+                }
+                isoscelesTriangleList.buttonEndThird.setOnClickListener {
+                    allInvis(binding)
+                    isoscelesTriangleList.isoscelesTriangleGroup.visibility = View.VISIBLE
+                }
+                isoscelesTriangleList.triangleIsoscelesTriangleHeightAndSidesA.setOnClickListener {
+                    allInvis(binding)
+                    isoscelesTriangleList.triangleIsoscelesTriangleHeightAndSidesGroup.visibility = View.VISIBLE
+                }
+                isoscelesTriangleList.buttonTriangleIsoscelesTriangleHeightAndSides.setOnClickListener {
+                    allInvis(binding)
+                    isoscelesTriangleList.triangleIsoscelesTriangleSidesGroup.visibility = View.VISIBLE
+                }
+                isoscelesTriangleList.triangleIsoscelesTriangleSidesAAndAngleA.setOnClickListener{
+                    allInvis(binding)
+                    isoscelesTriangleList.triangleIsoscelesTriangleSidesSecondGroup.visibility = View.VISIBLE
+                }
+                isoscelesTriangleList.buttonTriangleIsoscelesTriangleSides.setOnClickListener{
+                    allInvis(binding)
+                    isoscelesTriangleList.triangleIsoscelesTriangleSidesGroup.visibility = View.VISIBLE
+                }
             }
             parallelogram.setOnClickListener{
                 //TODO parallelogramActivity
@@ -72,6 +112,22 @@ class MainActivity : AppCompatActivity() {
             triangle.setOnClickListener{
                 //TODO triangleActivity
             }
+        }
+    }
+    private fun allInvis(binding: ActivityMainBinding){
+        binding.apply {
+            circleList.circleGroup.visibility = View.GONE
+            circularSectorList.circleSectorGroup.visibility = View.GONE
+            circularSegmentList.circularSegmentGroup.visibility = View.GONE
+            ellipseList.ellipseGroup.visibility = View.GONE
+            isoscelesTriangleList.isoscelesTriangleGroup.visibility = View.GONE
+            isoscelesTriangleList.triangleIsoscelesTriangleSidesGroup.visibility = View.GONE
+            isoscelesTriangleList.isoscelesTriangleGroup.visibility = View.GONE
+            isoscelesTriangleList.triangleEquilateralTriangleSideGroup.visibility = View.GONE
+            isoscelesTriangleList.triangleIsoscelesTriangleSidesGroup.visibility = View.GONE
+            isoscelesTriangleList.triangleIsoscelesTriangleHeightAndSidesGroup.visibility = View.GONE
+            isoscelesTriangleList.triangleIsoscelesTriangleSidesGroup.visibility = View.GONE
+            isoscelesTriangleList.triangleIsoscelesTriangleSidesSecondGroup.visibility = View.GONE
         }
     }
 }
