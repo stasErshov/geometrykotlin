@@ -173,4 +173,7 @@
 
     <include layout="@layout/isosceles_triangle_list"
         android:id="@+id/isosceles_triangle_list"/>
+
+    <include layout="@layout/parallelogram_list"
+        android:id="@+id/parallelogram_list"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
