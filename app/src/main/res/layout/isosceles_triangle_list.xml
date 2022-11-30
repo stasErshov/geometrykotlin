@@ -196,5 +196,55 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"/>
 
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/triangle_isosceles_triangle_sides_second_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="button_triangle_isosceles_triangle_sides,triangle_isosceles_triangle_sides_a_and_angle_aA,triangle_isosceles_triangle_sides_a_and_angle_b,triangle_isosceles_triangle_sides_b_and_angle_a,triangle_isosceles_triangle_sides_b_and_angle_b"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/button_triangle_isosceles_triangle_sides"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_200"
+            android:paddingTop="4dp"
+            android:text="@string/return_button"
+            app:layout_constraintBottom_toTopOf="@+id/triangle_isosceles_triangle_sides_a_and_angle_aA"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <ImageView
+            android:id="@+id/triangle_isosceles_triangle_sides_a_and_angle_aA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/triangle_isosceles_triangle_sides_a_and_angle_a"
+            app:layout_constraintBottom_toTopOf="@id/triangle_isosceles_triangle_sides_b_and_angle_a"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <ImageView
+            android:id="@+id/triangle_isosceles_triangle_sides_a_and_angle_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/triangle_isosceles_triangle_sides_a_and_angle_b"
+            app:layout_constraintBottom_toTopOf="@id/triangle_isosceles_triangle_sides_b_and_angle_b"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <ImageView
+            android:id="@+id/triangle_isosceles_triangle_sides_b_and_angle_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/triangle_isosceles_triangle_sides_b_and_angle_a"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <ImageView
+            android:id="@+id/triangle_isosceles_triangle_sides_b_and_angle_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/triangle_isosceles_triangle_sides_b_and_angle_b"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
