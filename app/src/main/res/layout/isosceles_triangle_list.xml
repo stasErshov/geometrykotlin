@@ -104,9 +104,63 @@
             app:layout_constraintBottom_toTopOf="@id/triangle_isosceles_triangle_sides_second"
             app:layout_constraintLeft_toLeftOf="parent"/>
 
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/triangle_equilateral_triangle_side_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="button_end_third,triangle_equilateral_radius_of_circle,triangle_equilateral_radius_of_inscribed_circle,triangle_equilateral_triangle_area,triangle_equilateral_triangle_height,triangle_equilateral_triangle_sideE"
+            android:visibility="gone"/>
 
+        <Button
+            android:id="@+id/button_end_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_200"
+            android:text="@string/return_button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/triangle_equilateral_triangle_sideE"
+            android:paddingTop="4dp"/>
 
+        <ImageView
+            android:id="@+id/triangle_equilateral_triangle_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/triangle_equilateral_triangle_height"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/triangle_equilateral_triangle_area"/>
 
+        <ImageView
+            android:id="@+id/triangle_equilateral_triangle_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/triangle_equilateral_triangle_area"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <ImageView
+            android:id="@+id/triangle_equilateral_radius_of_inscribed_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/triangle_equilateral_radius_of_inscribed_circle"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/triangle_equilateral_triangle_height"/>
+
+        <ImageView
+            android:id="@+id/triangle_equilateral_radius_of_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/triangle_equilateral_radius_of_circle"
+            app:layout_constraintBottom_toTopOf="@id/triangle_equilateral_radius_of_inscribed_circle"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <ImageView
+            android:id="@+id/triangle_equilateral_triangle_sideE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/triangle_equilateral_triangle_side"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/triangle_equilateral_triangle_height"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
