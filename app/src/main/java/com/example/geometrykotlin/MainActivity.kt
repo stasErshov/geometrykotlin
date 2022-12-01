@@ -143,7 +143,9 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             regularPolygon.setOnClickListener{
-                //TODO regularPolygonActivity
+                allInvis(binding)
+                regularPolygonList.regularPolygonGroup.visibility = View.VISIBLE
+                regularPolygonList.buttonEnd.setOnClickListener { allInvis(binding) }
             }
             rhombus.setOnClickListener{
                 //TODO rhombusActivity
@@ -194,6 +196,7 @@ class MainActivity : AppCompatActivity() {
             rectangleList.rectangleAngleFromDiagonalGroup.visibility = View.GONE
             rectangleList.rectangleAreaAndSideGroup.visibility = View.GONE
             squareList.squareGroup.visibility = View.GONE
+            regularPolygonList.regularPolygonGroup.visibility = View.GONE
         }
     }
 }
