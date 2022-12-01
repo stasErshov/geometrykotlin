@@ -176,4 +176,7 @@
 
     <include layout="@layout/parallelogram_list"
         android:id="@+id/parallelogram_list"/>
+
+    <include layout="@layout/rectangle_list"
+        android:id="@+id/rectangle_list"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
