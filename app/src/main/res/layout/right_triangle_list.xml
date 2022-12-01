@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:constraint_referenced_ids="button_end,triangle_hypotenuse_and_angle,triangle_right_triangle_catheti,triangle_right_triangle_leg_and_angle,triangle_right_triangle_leg_and_hypotenuse"
-            android:visibility="visible"/>
+            android:visibility="gone"/>
 
         <Button
             android:id="@+id/button_end"

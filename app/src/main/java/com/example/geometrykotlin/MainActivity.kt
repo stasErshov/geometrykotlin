@@ -154,6 +154,7 @@ class MainActivity : AppCompatActivity() {
             }
             rightTriangle.setOnClickListener{
                 allInvis(binding)
+                rightTriangleList.rightTriangleGroup.visibility = View.VISIBLE
                 rightTriangleList.triangleRightTriangleLegAndHypotenuse.setOnClickListener {
                     allInvis(binding)
                     rightTriangleList.triangleRightTriangleLegAndHypotenuseGroup.visibility = View.VISIBLE
@@ -172,7 +173,9 @@ class MainActivity : AppCompatActivity() {
                 rightTriangleList.buttonEndTheard.setOnClickListener { allInvis(binding) }
             }
             ring.setOnClickListener{
-                //TODO ringActivity
+                allInvis(binding)
+                ringList.ringGroup.visibility = View.VISIBLE
+                ringList.buttonEnd.setOnClickListener { allInvis(binding) }
             }
             square.setOnClickListener{
                 allInvis(binding)
@@ -180,12 +183,6 @@ class MainActivity : AppCompatActivity() {
                 squareList.buttonEnd.setOnClickListener{
                     allInvis(binding)
                 }
-            }
-            trapezoid.setOnClickListener{
-                //TODO trapezoidActivity
-            }
-            triangle.setOnClickListener{
-                //TODO triangleActivity
             }
         }
     }
@@ -218,7 +215,8 @@ class MainActivity : AppCompatActivity() {
             rhombusList.rhombusGroup.visibility = View.GONE
             rightTriangleList.triangleRightTriangleLegAndHypotenuseGroup.visibility = View.GONE
             rightTriangleList.triangleRightTriangleLegAndAngleGroup.visibility = View.GONE
-            rightTriangleList.triangleRightTriangleLegAndAngleGroup.visibility = View.GONE
+            rightTriangleList.rightTriangleGroup.visibility = View.GONE
+            ringList.ringGroup.visibility = View.GONE
         }
     }
 }
