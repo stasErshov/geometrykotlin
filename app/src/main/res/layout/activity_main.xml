@@ -184,4 +184,7 @@
     <include layout="@layout/regular_polygon_list"
         android:id="@+id/regular_polygon_list"/>
 
+    <include layout="@layout/rhombus_list"
+        android:id="@+id/rhombus_list"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

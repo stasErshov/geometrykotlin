@@ -148,7 +148,9 @@ class MainActivity : AppCompatActivity() {
                 regularPolygonList.buttonEnd.setOnClickListener { allInvis(binding) }
             }
             rhombus.setOnClickListener{
-                //TODO rhombusActivity
+                allInvis(binding)
+                rhombusList.rhombusGroup.visibility = View.VISIBLE
+                rhombusList.buttonEnd.setOnClickListener { allInvis(binding) }
             }
             rightTriangle.setOnClickListener{
                 //TODO rightTriangleActivity
@@ -197,6 +199,7 @@ class MainActivity : AppCompatActivity() {
             rectangleList.rectangleAreaAndSideGroup.visibility = View.GONE
             squareList.squareGroup.visibility = View.GONE
             regularPolygonList.regularPolygonGroup.visibility = View.GONE
+            rhombusList.rhombusGroup.visibility = View.GONE
         }
     }
 }
