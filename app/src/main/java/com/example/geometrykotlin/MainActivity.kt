@@ -118,7 +118,29 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             rectangle.setOnClickListener{
-                //TODO rectangleActivity
+                allInvis(binding)
+                rectangleList.rectangleGroup.visibility = View.VISIBLE
+                rectangleList.buttonEnd.setOnClickListener { allInvis(binding) }
+                rectangleList.buttonEndFirst.setOnClickListener { allInvis(binding) }
+                rectangleList.buttonEndSecond.setOnClickListener { allInvis(binding) }
+                rectangleList.buttonEndFourth.setOnClickListener { allInvis(binding) }
+                rectangleList.buttonEndTheard.setOnClickListener { allInvis(binding) }
+                rectangleList.rectangleAngleABetweenTheDiagonals.setOnClickListener{
+                    allInvis(binding)
+                    rectangleList.rectangleAngleFromDiagonalGroup.visibility = View.VISIBLE
+                }
+                rectangleList.diagonalAndSideA.setOnClickListener {
+                    allInvis(binding)
+                    rectangleList.diagonalAndSideGroup.visibility = View.VISIBLE
+                }
+                rectangleList.rectangleAngleDFromDiagonal.setOnClickListener {
+                    allInvis(binding)
+                    rectangleList.rectangleAngleFromDiagonalGroup.visibility = View.VISIBLE
+                }
+                rectangleList.rectangleAreaAndSideA.setOnClickListener {
+                    allInvis(binding)
+                    rectangleList.rectangleAreaAndSideGroup.visibility = View.VISIBLE
+                }
             }
             regularPolygon.setOnClickListener{
                 //TODO regularPolygonActivity
@@ -133,9 +155,10 @@ class MainActivity : AppCompatActivity() {
                 //TODO ringActivity
             }
             square.setOnClickListener{
+                allInvis(binding)
                 squareList.squareGroup.visibility = View.VISIBLE
                 squareList.buttonEnd.setOnClickListener{
-                    squareList.squareGroup.visibility = View.GONE
+                    allInvis(binding)
                 }
             }
             trapezoid.setOnClickListener{
@@ -165,6 +188,12 @@ class MainActivity : AppCompatActivity() {
             parallelogramList.parallelogramDiagonalAndAngleGroup.visibility = View.GONE
             parallelogramList.parallelogramDiagonalAndSideGroup.visibility = View.GONE
             parallelogramList.parallelogramHeightsAndAngle.visibility = View.GONE
+            rectangleList.rectangleGroup.visibility = View.GONE
+            rectangleList.rectangleAngleFromDiagonalGroup.visibility = View.GONE
+            rectangleList.diagonalAndSideGroup.visibility = View.GONE
+            rectangleList.rectangleAngleFromDiagonalGroup.visibility = View.GONE
+            rectangleList.rectangleAreaAndSideGroup.visibility = View.GONE
+            squareList.squareGroup.visibility = View.GONE
         }
     }
 }

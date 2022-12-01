@@ -153,6 +153,11 @@
                 app:layout_constraintRight_toRightOf="parent"
                 tools:ignore="MissingConstraints"
                 android:contentDescription="@string/triangle" />
+
+            <include
+                android:id="@+id/rectangle_list"
+                layout="@layout/rectangle_list"
+                tools:layout_editor_absoluteX="2dp" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
@@ -177,6 +182,4 @@
     <include layout="@layout/parallelogram_list"
         android:id="@+id/parallelogram_list"/>
 
-    <include layout="@layout/rectangle_list"
-        android:id="@+id/rectangle_list"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

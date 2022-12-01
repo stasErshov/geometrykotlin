@@ -78,5 +78,141 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent"/>
 
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/diagonal_and_side_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="button_end_first,diagonal_and_side_aA,diagonal_and_side_b"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/button_end_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_200"
+            android:text="@string/return_button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/diagonal_and_side_aA"
+            android:paddingTop="4dp"/>
+
+        <ImageView
+            android:id="@+id/diagonal_and_side_aA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/diagonal_and_side_a"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <ImageView
+            android:id="@+id/diagonal_and_side_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/diagonal_and_side_b"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/rectangle_angle_between_the_diagonals_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="button_end_second,rectangle_angle_a_between_the_diagonals_A,rectangle_angle_b_between_the_diagonals"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/button_end_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_200"
+            android:text="@string/return_button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/rectangle_angle_a_between_the_diagonals_A"
+            android:paddingTop="4dp"/>
+
+        <ImageView
+            android:id="@+id/rectangle_angle_a_between_the_diagonals_A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rectangle_angle_a_between_the_diagonals"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <ImageView
+            android:id="@+id/rectangle_angle_b_between_the_diagonals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rectangle_angle_b_between_the_diagonals"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/rectangle_angle_from_diagonal_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="button_end_theard,rectangle_angle_y_from_diagonal_A,rectangle_angle_d_from_diagonal"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/button_end_theard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_200"
+            android:text="@string/return_button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/rectangle_angle_y_from_diagonal_A"
+            android:paddingTop="4dp"/>
+
+        <ImageView
+            android:id="@+id/rectangle_angle_y_from_diagonal_A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rectangle_angle_y_from_diagonal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <ImageView
+            android:id="@+id/rectangle_angle_d_from_diagonal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rectangle_angle_d_from_diagonal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/rectangle_area_and_side_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="button_end_fourth,rectangle_area_and_side_b,rectangle_area_and_side_aA"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/button_end_fourth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_200"
+            android:text="@string/return_button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/rectangle_area_and_side_b"
+            android:paddingTop="4dp"/>
+
+        <ImageView
+            android:id="@+id/rectangle_area_and_side_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rectangle_area_and_side_b"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <ImageView
+            android:id="@+id/rectangle_area_and_side_aA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rectangle_area_and_side_a"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
