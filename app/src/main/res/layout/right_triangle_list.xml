@@ -62,5 +62,123 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent"/>
 
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/triangle_right_hypotenuse_and_angle_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="button_end_first,triangle_right_hypotenuse_and_angle_b,triangle_right_triangle_leg_and_angle_a"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/button_end_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_200"
+            android:text="@string/return_button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/triangle_right_hypotenuse_and_angle_b"
+            android:paddingTop="4dp"/>
+
+        <ImageView
+            android:id="@+id/triangle_right_hypotenuse_and_angle_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/triangle_right_hypotenuse_and_angle_b"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <ImageView
+            android:id="@+id/triangle_right_triangle_leg_and_angle_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/triangle_hypotenuse_and_angle_a"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/triangle_right_triangle_leg_and_angle_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="button_end_second,triangle_right_triangle_leg_c_and_angle_b,triangle_right_triangle_leg_b_and_angle_b,triangle_right_triangle_leg_c_and_angle_a_0,triangle_right_triangle_leg_b_and_angle_a"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/button_end_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_200"
+            android:text="@string/return_button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/triangle_right_triangle_leg_c_and_angle_b"
+            android:paddingTop="4dp"/>
+
+        <ImageView
+            android:id="@+id/triangle_right_triangle_leg_c_and_angle_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/triangle_right_triangle_leg_c_and_angle_b"
+            app:layout_constraintBottom_toTopOf="@id/triangle_right_triangle_leg_c_and_angle_a_0"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <ImageView
+            android:id="@+id/triangle_right_triangle_leg_b_and_angle_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/triangle_right_triangle_leg_b_and_angle_b"
+            app:layout_constraintBottom_toTopOf="@id/triangle_right_triangle_leg_b_and_angle_a"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <ImageView
+            android:id="@+id/triangle_right_triangle_leg_c_and_angle_a_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/triangle_right_triangle_leg_c_and_angle_a_0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <ImageView
+            android:id="@+id/triangle_right_triangle_leg_b_and_angle_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/triangle_right_triangle_leg_b_and_angle_a"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/triangle_right_triangle_leg_and_hypotenuse_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="button_end_theard,triangle_right_triangle_leg_b_and_hypotenuse,triangle_right_triangle_leg_c_and_hypotenuse"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/button_end_theard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_200"
+            android:text="@string/return_button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/triangle_right_triangle_leg_b_and_hypotenuse"
+            android:paddingTop="4dp"/>
+
+        <ImageView
+            android:id="@+id/triangle_right_triangle_leg_b_and_hypotenuse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/triangle_right_triangle_leg_b_and_hypotenuse"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <ImageView
+            android:id="@+id/triangle_right_triangle_leg_c_and_hypotenuse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/triangle_right_triangle_leg_c_and_hypotenuse"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

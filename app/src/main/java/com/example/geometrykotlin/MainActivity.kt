@@ -153,7 +153,23 @@ class MainActivity : AppCompatActivity() {
                 rhombusList.buttonEnd.setOnClickListener { allInvis(binding) }
             }
             rightTriangle.setOnClickListener{
-                //TODO rightTriangleActivity
+                allInvis(binding)
+                rightTriangleList.triangleRightTriangleLegAndHypotenuse.setOnClickListener {
+                    allInvis(binding)
+                    rightTriangleList.triangleRightTriangleLegAndHypotenuseGroup.visibility = View.VISIBLE
+                }
+                rightTriangleList.triangleRightTriangleLegAndAngle.setOnClickListener {
+                    allInvis(binding)
+                    rightTriangleList.triangleRightTriangleLegAndAngleGroup.visibility = View.VISIBLE
+                }
+                rightTriangleList.triangleHypotenuseAndAngle.setOnClickListener {
+                    allInvis(binding)
+                    rightTriangleList.triangleRightTriangleLegAndAngleGroup.visibility = View.VISIBLE
+                }
+                rightTriangleList.buttonEnd.setOnClickListener { allInvis(binding) }
+                rightTriangleList.buttonEndFirst.setOnClickListener { allInvis(binding) }
+                rightTriangleList.buttonEndSecond.setOnClickListener { allInvis(binding) }
+                rightTriangleList.buttonEndTheard.setOnClickListener { allInvis(binding) }
             }
             ring.setOnClickListener{
                 //TODO ringActivity
@@ -200,6 +216,9 @@ class MainActivity : AppCompatActivity() {
             squareList.squareGroup.visibility = View.GONE
             regularPolygonList.regularPolygonGroup.visibility = View.GONE
             rhombusList.rhombusGroup.visibility = View.GONE
+            rightTriangleList.triangleRightTriangleLegAndHypotenuseGroup.visibility = View.GONE
+            rightTriangleList.triangleRightTriangleLegAndAngleGroup.visibility = View.GONE
+            rightTriangleList.triangleRightTriangleLegAndAngleGroup.visibility = View.GONE
         }
     }
 }
